@@ -12,7 +12,8 @@ import EditCurso from './components/Curso/EditCurso'
 import AlumnoCursoForm from './components/AlumnoCursoForm'
 import { Carrera } from './components/Carrera/Carrera'
 import EditCarrera from './components/Carrera/EditCarrera'
-import TablaConModal from './components/Prueba'
+
+import AppModal from './components/Prueba'
 
 
 
@@ -23,7 +24,7 @@ function App() {
     <BrowserRouter>
     <RoutesWithNotFound>        
         <Route path="/" element={<Content />} />
-        <Route path="/prueba" element={<TablaConModal />} />
+        <Route path="/prueba" element={<AppModal />} />
         <Route path="/cursos" element={<Curso />} />
         <Route path="/carreras" element={<Carrera />} />
         <Route path="/alumno/:id/editar" element={<Edit/>} />
